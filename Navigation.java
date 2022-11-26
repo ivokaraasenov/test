@@ -19,6 +19,10 @@ public class Navigation {
     new Navigation().computeNavigation();
   }
 
+  private void print(String text) {
+    System.out.println(text);
+  }
+
   private void computeNavigation() {
     try {
       Region region = readRegionFromFile();
@@ -31,8 +35,11 @@ public class Navigation {
 
       System.out.println(shortestPath);
     } catch (IOException e) {
-      System.out.println("ERROR");
+<<<<<<< HEAD
+      print("ERROR");
       System.out.println(e);
+=======
+>>>>>>> refactoring
     }
   }
 

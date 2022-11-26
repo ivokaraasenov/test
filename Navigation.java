@@ -46,6 +46,13 @@ public class Navigation {
     return null;
   }
 
+  /**
+   * This gives the shortest path between cities back
+   * @param start city we are starting from
+   * @param target city we are going to
+   * @param region region we use
+   * @return gives the path back
+   */
   private List<City> computeShortestPathBetweenCities(City start, City target, Region region) {
     Map<City, List<RoutingEntry>> neighborDistances = computeNeighborDistances(region);
     Map<City, City> predecessorsOnShortestPath =
